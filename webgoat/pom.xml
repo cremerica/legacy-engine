@@ -9,7 +9,7 @@
 	 <distributionManagement>
     <snapshotRepository>
     <id>nexus</id>
-    <url>http://localhost:8081/repository/maven-snapshots/</url>
+    <url>http://172.17.0.2:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 	
@@ -48,7 +48,7 @@
         <extensions>true</extensions>
         <configuration>
               <serverId>nexus</serverId>
-          <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+          <nexusUrl>http://172.17.0.2:8081/nexus/</nexusUrl>
           <!-- update this to the correct id! -->
           <stagingProfileId>13e614824fbafdf2</stagingProfileId>
         </configuration>
