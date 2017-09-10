@@ -6,12 +6,12 @@
 	<packaging>war</packaging>
 	<version>5.4.4.3-SNAPSHOT</version>
 	
-	 <distributionManagement>
+	<!-- <distributionManagement>
     <snapshotRepository>
     <id>nexus</id>
     <url>http://172.17.0.2:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-  </distributionManagement>
+  </distributionManagement> -->
 	
 	<repositories>
 		<repository>
