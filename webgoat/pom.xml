@@ -6,12 +6,12 @@
 	<packaging>war</packaging>
 	<version>5.4.4.4-SNAPSHOT</version>
 	
-	<!-- <distributionManagement>
+	<distributionManagement>
     <snapshotRepository>
     <id>nexus</id>
     <url>http://172.17.0.2:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-  </distributionManagement> -->
+  </distributionManagement>
 	
 	<repositories>
 		<repository>
@@ -41,7 +41,7 @@
 					<encoding>ISO-8859-1</encoding>
 				</configuration>
 			</plugin>
-			  <!--    <plugin>
+	    <plugin>
        <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>1.6.3</version>
@@ -50,9 +50,9 @@
               <serverId>nexus</serverId>
           <nexusUrl>http://172.17.0.2:8081/nexus/</nexusUrl> -->
           <!-- update this to the correct id! -->
-          <!--<stagingProfileId>13e614824fbafdf2</stagingProfileId>
+          <stagingProfileId>13e614824fbafdf2</stagingProfileId>
         </configuration> 
-      </plugin>-->
+      </plugin>
 			<plugin>
         			<artifactId>maven-eclipse-plugin</artifactId>
         			<configuration>
