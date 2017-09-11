@@ -3,7 +3,7 @@
     <mirror> <!--Send all requests to the public group -->
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://172.17.0.2:8081/repository/maven-public/</url>
+      <url>http://172.17.0.3:8081/repository/maven-public/</url>
     </mirror>
   </mirrors>
   <activeProfiles>
