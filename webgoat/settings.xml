@@ -1,6 +1,6 @@
 <settings>
   <mirrors>
-    <mirror> <!--Send all requests to the public group -->
+    <mirror> <!--Send all requests to the public  group -->
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
       <url>http://172.17.0.1:8081/repository/maven-central/</url>
