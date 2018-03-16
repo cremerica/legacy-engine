@@ -1,11 +1,35 @@
-<settings>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+
+<servers>
+    <server>
+      <id>nexus-snapshots</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+    <server>
+      <id>nexus-releases</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+
   <mirrors>
-    <mirror> <!--Send all requests to the public  group -->
-      <id>nexus</id>
+    <mirror>
+      <id>central</id>
+      <name>central</name>
+      <url>http://192.168.200.49:8081/repository/maven-public/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+  <!-- <mirrors> 
+    <mirror> --><!--Send all requests to the public  group -->
+     <!--   <id>nexus</id>
       <mirrorOf>*</mirrorOf>
       <url>http://192.168.200.49:8081/repository/maven-central/</url>
     </mirror>
-  </mirrors>
+  </mirrors> -->
   <activeProfiles>
     <!--make the profile active all the time -->
     <activeProfile>nexus</activeProfile>
@@ -46,11 +70,5 @@
     <pluginGroup>org.sonatype.plugins</pluginGroup>
   </pluginGroups>
 
-  <servers>
-    <server>
-      <id>nexus</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
-  </servers>
+  
 </settings>
