@@ -4,7 +4,7 @@
 	<groupId>WebGoat</groupId>
 	<artifactId>WebGoat</artifactId>
 	<packaging>war</packaging>
-	<version>5.4.4.10-SNAPSHOT-${maven.build.timestamp}</version>
+	<version>5.4.4.10-SNAPSHOT</version>
 	
 	<distributionManagement>
     <snapshotRepository>
@@ -49,18 +49,18 @@
 					<encoding>ISO-8859-1</encoding>
 				</configuration>
 			</plugin>
-	    <plugin>
-       <groupId>org.sonatype.plugins</groupId>
+	    <!-- <plugin>
+        <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>1.6.3</version>
         <extensions>true</extensions>
         <configuration>
               <serverId>nexus</serverId>
-          <nexusUrl>http://localhost:8081/</nexusUrl> 
+          <nexusUrl>http://localhost:8081/</nexusUrl> -->
           <!-- update this to the correct id! -->
-          <stagingProfileId>13e614824fbafdf2</stagingProfileId>
+         <!--   <stagingProfileId>13e614824fbafdf2</stagingProfileId>
         </configuration> 
-      </plugin>
+      </plugin>-->
 			<plugin>
         			<artifactId>maven-eclipse-plugin</artifactId>
         			<configuration>
