@@ -17,9 +17,9 @@
 
   <mirrors>
     <mirror>
-      <id>central</id>
+      <id>nexus</id>
       <name>central</name>
-      <url>http://192.168.200.49:8081/repository/maven-public/</url>
+      <url>http://localhost:8081/repository/maven-public/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
