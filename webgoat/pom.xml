@@ -4,12 +4,12 @@
 	<groupId>WebGoat</groupId>
 	<artifactId>WebGoat</artifactId>
 	<packaging>war</packaging>
-	<version>5.4.4.15-SNAPSHOT</version>
+	<version>5.4.4.16-SNAPSHOT</version>
 	
 	<distributionManagement>
     <snapshotRepository>
     <id>nexus</id>
-    <url>http://192.168.200.49:8081/repository/InternalApps/</url>
+    <url>http://localhost:8081/repository/InternalApps/</url>
     </snapshotRepository>
   </distributionManagement>
 	
@@ -48,7 +48,7 @@
         <extensions>true</extensions>
         <configuration>
               <serverId>nexus</serverId>
-          <nexusUrl>http://192.168.200.49:8081/</nexusUrl> 
+          <nexusUrl>http://localhost:8081/</nexusUrl> 
           <!-- update this to the correct id! -->
           <stagingProfileId>13e614824fbafdf2</stagingProfileId>
         </configuration> 
