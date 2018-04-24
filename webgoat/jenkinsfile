@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+
+    parameters {
+         string(name: 'tomcat_uat', defaultValue: '/Users/fernandocremer/Tomcat/UAT/', description: 'Staging Server')
+         string(name: 'tomcat_prod', defaultValue: '/Users/fernandocremer/Tomcat/PROD/', description: 'Production Server')
+    }
+
+    triggers {
+         pollSCM('* * * * *')
+     }
+
+stages{
+        stage('Build'){
+            steps {
+                sh 'mvn clean package'
+            }
+            post {
+                success {
+                    echo 'Now Archiving...'
+                    archiveArtifacts artifacts: '**/target/*.war'
+                }
+            }
+        }
+
+        stage ('Deployments'){
+            parallel{
+                stage ('Deploy to UAT'){
+                    steps {
+                        echo 'Stopping Tomcat on UAT...'
+                        sh "./${params.tomcat_uat}apache-tomcat-9.0.7/bin/shutdown.sh"
+                        echo 'Copying war...'
+                        sh "cp -i **/target/*.war ${params.tomcat_uat}apache-tomcat-9.0.7/webapps"
+                        echo 'Starting Tomcat on UAT...'
+                        sh "./${params.tomcat_uat}apache-tomcat-9.0.7/bin/startup.sh"
+
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
