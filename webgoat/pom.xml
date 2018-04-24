@@ -4,21 +4,14 @@
 	<groupId>WebGoat</groupId>
 	<artifactId>WebGoat</artifactId>
 	<packaging>war</packaging>
-<<<<<<< HEAD
 	<version>5.4.4.18-SNAPSHOT</version>
-=======
-	<version>5.4.4.10-SNAPSHOT</version>
->>>>>>> branch 'master' of https://github.com/cremerfc/WebGoat.git
-	
 	<distributionManagement>
     <snapshotRepository>
-<<<<<<< HEAD
+
     <id>nexus</id>
     <url>http://localhost:8081/repository/InternalApps/</url>
-=======
-      <id>nexus-snapshots</id>
-      <url>http://localhost:8081/repository/maven-snapshots/</url>
->>>>>>> branch 'master' of https://github.com/cremerfc/WebGoat.git
+
+     
     </snapshotRepository>
     <repository>
       <id>nexus-releases</id>
@@ -65,11 +58,9 @@
         <extensions>true</extensions>
         <configuration>
               <serverId>nexus</serverId>
-<<<<<<< HEAD
+
           <nexusUrl>http://localhost:8081/</nexusUrl> 
-=======
-          <nexusUrl>http://localhost:8081/</nexusUrl> -->
->>>>>>> branch 'master' of https://github.com/cremerfc/WebGoat.git
+
           <!-- update this to the correct id! -->
          <!--   <stagingProfileId>13e614824fbafdf2</stagingProfileId>
         </configuration> 
