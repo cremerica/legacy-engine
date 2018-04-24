@@ -4,13 +4,26 @@
 	<groupId>WebGoat</groupId>
 	<artifactId>WebGoat</artifactId>
 	<packaging>war</packaging>
+<<<<<<< HEAD
 	<version>5.4.4.18-SNAPSHOT</version>
+=======
+	<version>5.4.4.10-SNAPSHOT</version>
+>>>>>>> branch 'master' of https://github.com/cremerfc/WebGoat.git
 	
 	<distributionManagement>
     <snapshotRepository>
+<<<<<<< HEAD
     <id>nexus</id>
     <url>http://localhost:8081/repository/InternalApps/</url>
+=======
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+>>>>>>> branch 'master' of https://github.com/cremerfc/WebGoat.git
     </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
   </distributionManagement>
 	
 	<repositories>
@@ -19,6 +32,10 @@
 			<name>Java.net Maven 2 Repository</name>
 			<url>http://download.java.net/maven/2</url>
 		</repository>
+		<repository>
+      <id>maven-group</id>
+      <url>http://localhost:8081/repository/maven-public/</url>
+    </repository>
 	</repositories>
 	
 
@@ -41,18 +58,22 @@
 					<encoding>ISO-8859-1</encoding>
 				</configuration>
 			</plugin>
-	    <plugin>
-       <groupId>org.sonatype.plugins</groupId>
+	    <!-- <plugin>
+        <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>1.6.3</version>
         <extensions>true</extensions>
         <configuration>
               <serverId>nexus</serverId>
+<<<<<<< HEAD
           <nexusUrl>http://localhost:8081/</nexusUrl> 
+=======
+          <nexusUrl>http://localhost:8081/</nexusUrl> -->
+>>>>>>> branch 'master' of https://github.com/cremerfc/WebGoat.git
           <!-- update this to the correct id! -->
-          <stagingProfileId>13e614824fbafdf2</stagingProfileId>
+         <!--   <stagingProfileId>13e614824fbafdf2</stagingProfileId>
         </configuration> 
-      </plugin>
+      </plugin>-->
 			<plugin>
         			<artifactId>maven-eclipse-plugin</artifactId>
         			<configuration>

@@ -1,11 +1,40 @@
-<settings>
-  <mirrors>
-    <mirror> <!--Send all requests to the public  group -->
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+
+<servers>
+     <server>
       <id>nexus</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+    <server>
+      <id>nexus-snapshots</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+    <server>
+      <id>nexus-releases</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <name>central</name>
+      <url>http://localhost:8081/repository/maven-public/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+  <!-- <mirrors> 
+    <mirror> --><!--Send all requests to the public  group -->
+     <!--   <id>nexus</id>
       <mirrorOf>*</mirrorOf>
       <url>http://localhost:8081/repository/maven-central/</url>
     </mirror>
-  </mirrors>
+  </mirrors> -->
   <activeProfiles>
     <!--make the profile active all the time -->
     <activeProfile>nexus</activeProfile>
@@ -18,7 +47,7 @@
       <repositories>
         <repository>
           <id>central</id>
-          <url>http://central</url>
+          <url>http://search.maven.org/</url>
           <releases>
             <enabled>true</enabled>
           </releases>
@@ -46,6 +75,7 @@
     <pluginGroup>org.sonatype.plugins</pluginGroup>
   </pluginGroups>
 
+<<<<<<< HEAD
   <servers>
     <server>
       <id>nexus</id>
@@ -53,4 +83,7 @@
       <password>admin1233</password>
     </server>
   </servers>
+=======
+  
+>>>>>>> branch 'master' of https://github.com/cremerfc/WebGoat.git
 </settings>
