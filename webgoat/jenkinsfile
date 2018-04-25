@@ -28,7 +28,7 @@ stages{
                 stage ('Deploy to UAT'){
                     steps {
                         echo 'Stopping Tomcat on UAT now...'
-                        sh 'shutdown.sh'
+                        sh '${params.tomcat_uat}apache-tomcat-9.0.7/bin/shutdown.sh'
                         echo 'Copying war...'
                         sh "cp -i **/target/*.war ${params.tomcat_uat}apache-tomcat-9.0.7/webapps"
                         echo 'Starting Tomcat on UAT...'
