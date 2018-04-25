@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     parameters {
-         string(name: 'tomcat_uat', defaultValue: '/Users/fernandocremer/Tomcat/UAT/', description: 'Staging Server')
-         string(name: 'tomcat_prod', defaultValue: '/Users/fernandocremer/Tomcat/PROD/', description: 'Production Server')
+         string(name: 'tomcat_uat', defaultValue: '/Users/Shared/Jenkins/Tomcat/UAT/', description: 'Staging Server')
+         string(name: 'tomcat_prod', defaultValue: '/Users/Shared/Jenkins/Tomcat/PROD/', description: 'Production Server')
     }
 
     triggers {
@@ -28,7 +28,6 @@ stages{
                 stage ('Deploy to UAT'){
                     steps {
                         echo 'Stopping Tomcat on UAT now...'
-                        sh "cd ${params.tomcat_uat}apache-tomcat-9.0.7/bin/"
                         sh "shutdown.sh"
                         echo 'Copying war...'
                         sh "cp -i **/target/*.war ${params.tomcat_uat}apache-tomcat-9.0.7/webapps"
