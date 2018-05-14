@@ -4,7 +4,7 @@
 	<groupId>WebGoat</groupId>
 	<artifactId>WebGoat</artifactId>
 	<packaging>war</packaging>
-	<version>5.4.4.19-SNAPSHOT</version>
+	<version>5.4.4.20-SNAPSHOT</version>
 	<distributionManagement>
     <snapshotRepository>
 
