@@ -5,18 +5,18 @@
 <servers>
      <server>
       <id>nexus</id>
-      <username>admin</username>
-      <password>admin123</password>
+      <username>mavenguy</username>
+      <password>mavenguy</password>
     </server>
     <server>
       <id>nexus-snapshots</id>
-      <username>admin</username>
-      <password>admin123</password>
+      <username>mavenguy</username>
+      <password>mavenguy</password>
     </server>
     <server>
       <id>nexus-releases</id>
-      <username>admin</username>
-      <password>admin123</password>
+      <username>mavenguy</username>
+      <password>mavenguy</password>
     </server>
   </servers>
 
@@ -28,13 +28,7 @@
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
-  <!-- <mirrors> 
-    <mirror> --><!--Send all requests to the public  group -->
-     <!--   <id>nexus</id>
-      <mirrorOf>*</mirrorOf>
-      <url>http://localhost:8081/repository/maven-central/</url>
-    </mirror>
-  </mirrors> -->
+  
   <activeProfiles>
     <!--make the profile active all the time -->
     <activeProfile>nexus</activeProfile>
