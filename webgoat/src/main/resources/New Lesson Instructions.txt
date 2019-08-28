@@ -16,7 +16,7 @@ import java.util.*;
 import org.apache.ecs.*;
 import org.apache.ecs.html.*;
 
-// Add copyright text - use text from another lesson 
+// Add copyright text - use text from another lesson ok?
 
 public class NewLesson extends LessonAdapter
 {
