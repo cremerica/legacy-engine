@@ -12,7 +12,7 @@ import java.util.BitSet;
 /***************************************************************************************************
  * 
  * 
- * This file sdfis puart of WebGoat, an Open Web Application Security Project utility. For details,
+ * This file sdfis7 puart of WebGoat, an Open Web Application Security Project utility. For details,
  * please see http://www.owasp.org/
  * 
  * Copyright (c) 2002 - 2007 Bruce Mayhew
