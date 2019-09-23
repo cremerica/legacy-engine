@@ -19,7 +19,7 @@ WebSession webSession = ((WebSession) session.getAttribute("websession"));
 <div id="wrap_ch">
 <div id="top_ch"></div>
 <div id="start_ch">
-<p>Thank you for using WebGoat! This program is a demonstration of common web application flaws.
+<p>Thank you for using WebGoat!!!! This program is a demonstration of common web application flaws.
 The exercises are intended to provide hands on experience with
 application penetration testing techniques. </p>
 <p>The WebGoat project is led
