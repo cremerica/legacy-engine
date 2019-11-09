@@ -5,18 +5,18 @@
 <servers>
      <server>
       <id>nexus</id>
-      <username>mavenguy</username>
-      <password>mavenguy</password>
+      <username>admin</username>
+      <password>password</password>
     </server>
     <server>
       <id>nexus-snapshots</id>
-      <username>mavenguy</username>
-      <password>mavenguy</password>
+      <username>admin</username>
+      <password>password</password>
     </server>
     <server>
       <id>nexus-releases</id>
-      <username>mavenguy</username>
-      <password>mavenguy</password>
+      <username>admin</username>
+      <password>password</password>
     </server>
   </servers>
 
