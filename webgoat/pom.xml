@@ -9,13 +9,13 @@
     <snapshotRepository>
 
     <id>nexus</id>
-    <url>http://localhost:8081/repository/maven-snapshots/</url>
+    <url>http://ec2-18-219-181-141.us-east-2.compute.amazonaws.com:8081/repository/maven-snapshots/</url>
 
      
     </snapshotRepository>
     <repository>
       <id>nexus-releases</id>
-      <url>http://localhost:8081/repository/releases/</url>
+      <url>http://ec2-18-219-181-141.us-east-2.compute.amazonaws.com:8081/repository/releases/</url>
     </repository>
   </distributionManagement>
 	
@@ -27,7 +27,7 @@
 		</repository>
 		<repository>
       <id>maven-group</id>
-      <url>http://localhost:8081/repository/maven-public/</url>
+      <url>http://ec2-18-219-181-141.us-east-2.compute.amazonaws.com:8081/repository/maven-public/</url>
     </repository>
 	</repositories>
 	
